@@ -4,6 +4,7 @@ import Home from './components/Home';
 import WorkExperience from './components/WorkExperience';
 import ProjectExperience from './components/ProjectExperience';
 import Footer from './components/Footer';
+import AboutMe from './AboutMe';
 
 const App: React.FC = () => {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -40,7 +41,7 @@ const App: React.FC = () => {
     <div>
       <div className="max-w-screen-lg lg:mx-auto mx-8">
         <Home ref={homeRef} />
-        <p>Hello</p>
+        <AboutMe ref={aboutMeRef} />
         {/* <AboutMe ref={aboutMeRef} />
         <Projects ref={projectsRef}></Projects>
         <NavBar onClick={onNavBarClick}></NavBar> */}

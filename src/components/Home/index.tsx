@@ -2,9 +2,9 @@ import React, { Suspense, useEffect } from "react";
 // const ProfilePhoto = React.lazy(
 //   () => import(/* webpackChunkName: "profile-photo" */ "./ProfilePhoto")
 // );
-// const IntroText = React.lazy(
-//   () => import(/* webpackChunkName: "intro-text" */ "./IntroText")
-// );
+const IntroText = React.lazy(
+  () => import(/* webpackChunkName: "intro-text" */ "./IntroText")
+);
 const SocialIconsBar = React.lazy(
   () => import(/* webpackChunkName: "social-icons" */ "./IconsBar")
 );
@@ -21,8 +21,7 @@ const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
     >
       <div className="col-span-2 text-center md:text-left">
         <Suspense fallback={<Loading />}>
-          {/* <IntroText /> */}
-          <p>Hello!</p>
+          <IntroText />
         </Suspense>
         <div className="mt-2 flex mx-auto md:mt-12 flex-row justify-center md:justify-normal">
           <SocialIconsBar />
