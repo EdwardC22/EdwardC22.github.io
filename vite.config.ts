@@ -4,7 +4,6 @@ import path from "path";
 
 
 export default defineConfig({
-  base: '/EdwardC22.github.io/', // 关键：设置为你的仓库名
   plugins: [react()],
   assetsInclude: ["static/"],
   build: {
