@@ -1,4 +1,4 @@
-import { Card, CardBody } from "@/components/Card";
+import { Card, CardBody } from "@/components/common/Card";
 import { useExtendStyle } from "@/hooks";
 import React from "react";
 import resources from "@/@types/resources";
@@ -25,24 +25,24 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
       {backgroundUrl && (
         <img
           src={backgroundUrl}
-          className="absolute py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20 max-h-full"
+          className="absolute py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-15 max-h-full"
           alt={backgroundAlt}
         />
       )}
       <CardBody className="text-center relative">
         <p
-          className={font`text-gray-700 dark:text-slate-300 mb-1 font-bold text-sm`}
+          className={font`text-gray-700 dark:text-slate-300 mb-2 font-bold text-xl`}
         >
           {university}
         </p>
         <p
-          className={font`text-gray-500 dark:text-slate-400 font-bold text-xs`}
+          className={font`text-gray-700 dark:text-slate-400 font-bold text-xs`}
         >
           {degree}
         </p>
         {duration && (
           <p
-            className={font`text-gray-600 dark:text-slate-400 tracking-wide mt-1 text-xs`}
+            className={font`text-gray-600 dark:text-slate-400 tracking-wide mt-2 text-xs`}
           >
             {duration}
           </p>
