@@ -4,6 +4,7 @@ import path from "path";
 
 
 export default defineConfig({
+  base: '/EdwardC22.github.io/',
   plugins: [react()],
   assetsInclude: ["static/"],
   build: {
