@@ -31,7 +31,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({
       )}
       <CardBody className="text-center relative">
         <p
-          className={font`text-gray-700 dark:text-slate-300 mb-2 font-bold text-xl`}
+          className={font`text-gray-700 dark:text-slate-300 mb-2 font-bold text-lg`}
         >
           {university}
         </p>

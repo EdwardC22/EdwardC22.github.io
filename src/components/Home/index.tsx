@@ -29,7 +29,6 @@ const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
       </div>
       <div>
         <Suspense fallback={<Loading />}>
-          
         </Suspense>
       </div>
     </div>

@@ -15,6 +15,50 @@
   }
 }
 
+@keyframes skill-fill {
+  0% {
+    width: 0%;
+    opacity: 0.8;
+  }
+  100% {
+    width: var(--target-width);
+    opacity: 1;
+  }
+}
+
+@keyframes skill-bar-pulse {
+  0%, 100% {
+    transform: scaleX(1.5);
+  }
+  50% {
+    transform: scaleX(1.02);
+  }
+}
+
+@keyframes skill-tip-wiggle {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
 .animate-breathe {
-  animation: breathe 3s ease-in-out infinite;
+  animation: breathe 10s ease-in-out infinite;
+}
+
+.animate-skill-fill {
+  animation: skill-fill 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-skill-pulse {
+  animation: skill-bar-pulse 2s ease-in-out infinite;
+}
+
+.animate-skill-wiggle {
+  animation: skill-tip-wiggle 1.5s ease-in-out infinite;
 }

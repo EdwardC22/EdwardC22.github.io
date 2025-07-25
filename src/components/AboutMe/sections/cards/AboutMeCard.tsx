@@ -25,7 +25,7 @@ const AboutMeCardHeader: React.FC<AboutMeHeaderProps> = ({
 }) => {
   return (
     <div className={`flex flex-row items-start justify-start`}>
-      <p className="text-l">
+      <p className="text-lg">
         <FontAwesomeIcon
           icon={faChevronRight}
           size="xs"
@@ -36,7 +36,7 @@ const AboutMeCardHeader: React.FC<AboutMeHeaderProps> = ({
       </p>
 
       <div className="flex flex-col">
-        <h3 className="text-xl font-semibold ">{title}</h3>
+        <h3 className="text-lg font-semibold ">{title}</h3>
         {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { createContext, useContext } from "react";
+
 export const useExtendStyle =
   (classNames: string) =>
   (base: TemplateStringsArray, ...strExprs: (string | undefined)[]) => {
@@ -6,3 +8,7 @@ export const useExtendStyle =
       .join(" ")}`;
     return res.trim();
   };
+
+  
+const CollapsedContext = createContext(true);
+export const useParentCollapsedState = () => useContext(CollapsedContext);

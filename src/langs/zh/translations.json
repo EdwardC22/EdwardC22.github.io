@@ -29,7 +29,7 @@
       "items": [
         {
           "university": "新南威尔士大学",
-          "degree": "信息技术硕士",
+          "degree": "IT硕士",
           "duration": "2021 年 2 月 - 2023 年 1 月",
           "backgroundUrl": "/static/imgs/unsw.svg",
           "backgroundAlt": "新南威尔士大学校徽"
@@ -50,12 +50,23 @@
           "heading": "前端",
           "subheading": "熟悉 HTML、CSS、JS；使用 React、Tailwind",
           "skillset": {
-            "HTML": "proficient",
-            "CSS": "proficient",
-            "JavaScript": "proficient",
-            "TypeScript": "proficient",
-            "React": "proficient",
-            "Redux": "intermediate"
+            "HTML": 90,
+            "CSS": 80,
+            "JavaScript": 85,
+            "TypeScript": 80,
+            "React": 70,
+            "Redux": 70
+          }
+        },
+        {
+          "heading": "后端",
+          "subheading": "熟悉 C#、Python、Node.js、.NET Core",
+          "skillset": {
+            "C#": 70,
+            "Python": 75,
+            "Node.js": 80,
+            "C++": 60,
+            "ASP.NET": 60
           }
         }
       ]
@@ -66,9 +77,7 @@
         {
           "title": "计算机视觉开发",
           "company": "星徽联",
-          "descriptions": [
-
-          ]
+          "descriptions": []
         },
         {
           "title": "软件工程师实习生",

@@ -46,12 +46,12 @@
           "heading": "Frontend",
           "subheading": "Familiar with HTML, CSS, JS; uses React, Tailwind",
           "skillset": {
-            "HTML": "proficient",
-            "CSS": "proficient",
-            "JavaScript": "proficient",
-            "TypeScript": "proficient",
-            "React": "proficient",
-            "Redux": "intermediate"
+            "HTML": 90,
+            "CSS": 80,
+            "JavaScript": 85,
+            "TypeScript": 80,
+            "React": 70,
+            "Redux": 60
           }
         }
       ]
