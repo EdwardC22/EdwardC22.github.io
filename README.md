@@ -34,7 +34,6 @@ npm run serve
 - **样式**: Tailwind CSS
 - **国际化**: react-i18next
 - **图标**: FontAwesome, Heroicons
-- **3D 效果**: Three.js (@react-three/fiber)
 
 ## 📁 项目结构
 
