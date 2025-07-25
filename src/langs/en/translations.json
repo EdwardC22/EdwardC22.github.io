@@ -27,14 +27,14 @@
           "university": "University of New South Wales",
           "degree": "Master of IT",
           "duration": "Feb 2021 - Jan 2023",
-          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundUrl": "/imgs/unsw.svg",
           "backgroundAlt": "UNSW Sydney Logo"
         },
         {
           "university": "University of New South Wales",
           "degree": "Bachelor of Chemical Engineering Science",
           "duration": "Feb 2017 - Jan 2021",
-          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundUrl": "/imgs/unsw.svg",
           "backgroundAlt": "UNSW Sydney Logo"
         }
       ]

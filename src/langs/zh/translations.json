@@ -31,14 +31,14 @@
           "university": "新南威尔士大学",
           "degree": "IT硕士",
           "duration": "2021 年 2 月 - 2023 年 1 月",
-          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundUrl": "/imgs/unsw.svg",
           "backgroundAlt": "新南威尔士大学校徽"
         },
         {
           "university": "新南威尔士大学",
           "degree": "化学工程学士",
           "duration": "2017 年 2 月 - 2021 年 1 月",
-          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundUrl": "/imgs/unsw.svg",
           "backgroundAlt": "新南威尔士大学校徽"
         }
       ]
