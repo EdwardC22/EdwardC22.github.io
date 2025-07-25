@@ -1,16 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import WorkExperience from './components/WorkExperience';
 import ProjectExperience from './components/ProjectExperience';
 import Footer from './components/Footer';
-import AboutMe from './AboutMe';
+import AboutMe from './components/AboutMe';
+import { useTranslation } from "react-i18next";
+
+const useI18nTitle = () => {
+  const { t, i18n } = useTranslation();
+  useLayoutEffect(() => {
+    document.title = t("title");
+  }, [t, i18n.language]);
+};
 
 const App: React.FC = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutMeRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-
+  useI18nTitle();
   // const onNavBarClick = (name: SectionName) => {
   //   switch (name) {
   //     case "home": {

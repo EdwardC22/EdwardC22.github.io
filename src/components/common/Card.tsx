@@ -1,29 +1,27 @@
-import React from 'react';
+import React from "react";
+import { useExtendStyle } from "@/hooks";
+type CardProps = React.PropsWithChildren<{
+  className?: string;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+}>;
 
-interface CardProps {
-  title: string;
-  description: string;
-  company?: string; 
-  technologies?: string[];
-}
+export const CardHeader: React.FC<CardProps> = ({ children, className }) => {
+  const css = useExtendStyle("text-lg font-semibold text-gray-700");
+  return <div className={css`${className ?? ""}`}>{children}</div>;
+};
 
-const Card: React.FC<CardProps> = ({ title, description, technologies }) => {
+export const CardBody: React.FC<CardProps> = ({ children, className }) => {
+  return <div className={className}>{children}</div>;
+};
+
+export const Card: React.FC<CardProps> = ({ children, className, onClick }) => {
+  const rootCss = useExtendStyle("shadow-lg rounded-lg bg-white border border-gray-200");
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-gray-700">{description}</p>
-      {technologies && (
-        <div className="mt-2">
-          <h4 className="font-medium">Technologies:</h4>
-          <ul className="list-disc list-inside">
-            {technologies.map((tech, index) => (
-              <li key={index} className="text-gray-600">{tech}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+    <div
+      className={rootCss`${className ?? ""} bg-white dark:bg-slate-600 border border-gray-200 dark:border-gray-600`}
+      onClick={onClick}
+    >
+      {children}
     </div>
   );
 };
-
-export default Card;

@@ -4,7 +4,7 @@ import AboutMeCard from "./AboutMeCard";
 type WorkCardProps = {
   title: string | JSX.Element;
   company: string;
-  descriptions: [string];
+  descriptions: string[];
   className?: string;
 };
 
@@ -15,7 +15,11 @@ export const WorkCard: React.FC<WorkCardProps> = ({
   className,
 }) => {
   return (
-    <AboutMeCard className={className} title={company} subtitle={title}>
+    <AboutMeCard
+      className={`mb-4 ${className ?? ""}`}
+      title={company}
+      subtitle={title}
+    >
       <div className="mt-2">
         {descriptions.map((item) => (
           <p

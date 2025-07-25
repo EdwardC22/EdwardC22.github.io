@@ -1,0 +1,128 @@
+{
+  "title": "Edward's Portfolio",
+  "navbar": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "name": "Edward Chen",
+    "settings": {
+      "darkMode": "Dark",
+      "lightMode": "Light",
+      "fancyMode": "Fancy Mode",
+      "followSystem": "System"
+    }
+  },
+  "home": {
+    "heading": "G'Day! I'm Edward.",
+    "subheading1": "Computer Vision Engineer",
+    "subheading2": "Web Developer (React)",
+    "email": "edwardchan22@hotmail.com",
+    "copied": "Copied!"
+  },
+  "aboutMe": {
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "university": "University of New South Wales",
+          "degree": "Master of IT",
+          "duration": "Feb 2021 - Jan 2023",
+          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundAlt": "UNSW Sydney Logo"
+        },
+        {
+          "university": "University of New South Wales",
+          "degree": "Bachelor of Chemical Engineering Science",
+          "duration": "Feb 2017 - Jan 2021",
+          "backgroundUrl": "/static/imgs/unsw.svg",
+          "backgroundAlt": "UNSW Sydney Logo"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "items": [
+        {
+          "heading": "Frontend",
+          "subheading": "Familiar with HTML, CSS, JS; uses React, Tailwind",
+          "skillset": {
+            "HTML": "proficient",
+            "CSS": "proficient",
+            "JavaScript": "proficient",
+            "TypeScript": "proficient",
+            "React": "proficient",
+            "Redux": "intermediate"
+          }
+        }
+      ]
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "Frontend Developer",
+          "company": "National Supercomputing Center, Wuxi",
+          "descriptions": [
+            "Implemented a comprehensive dashboard with Vue.js for job status visualisation",
+            "Created detailed visualisation for job statistics with echarts",
+            "Developed an API gateway facilatating communication between the web interface and backend service",
+            "Refactoring and optimising existing code to user interface performance"
+          ]
+        },
+        {
+          "title": "Software Engineer Intern",
+          "company": "Everyoung AI",
+          "descriptions": [
+            "Developped a mobile app with Reactive Native, with capability of real-time AI chatting with voice and text",
+            "Renovated the company website, enhancing user experience and SEO",
+            "Involved in developping processing pipeline involving NLP and computer vision"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "heading": "Seed Guided Topic Modelling",
+          "subheading": "Research (B. Comp Sci. Honours)",
+          "descriptions": [
+            "User-topic based word clustering algorithm",
+            "Ensemble approach with BERT and statistical models",
+            "addresses unseen topics not in the vocabulary"
+          ]
+        },
+        {
+          "heading": "Iris: Multithreaded IRC",
+          "subheading": "Rust (Oct, 2022)",
+          "descriptions": [
+            "Allowing multiple clients to connect and talk to each other with multi-threading",
+            "Developed a plugin protocol to enrich the user experience",
+            "Conducted thorough testing with 95% code coverage"
+          ]
+        },
+        {
+          "heading": "UltiRTS/Nest-plasmid",
+          "subheading": "Open Source (Jan 2023 - Current)",
+          "descriptions": [
+            "Built a game lobby server with Nest.js and Typescript, allowing scaling with NestJS workers",
+            "Adopted multi-layer data storage with Redis and MySQL strategy for better performance",
+            "Capable of token-based session management and Inter-Process communication for improved modularity",
+            "Facilitates real-time user-to-user and channel chatting with WebSocket enhancing user experience"
+          ],
+          "url": "https://github.com/UltiRTS/nest-plasmid"
+        },
+        {
+          "heading": "Medical Chatbot",
+          "subheading": "Capstone Project (React + Flask)",
+          "descriptions": [
+            "Built an intuitive web interface using React and Redux",
+            "Constructed a RESTful server with Flask and MongoDB",
+            "Incorporated Google Dialogflow API for accurately analysing users' intentions",
+            "Conducted weekly meetings to ensure task tracking on JIRA"
+          ]
+        }
+      ]
+    }
+  }
+}
