@@ -49,9 +49,10 @@ const App: React.FC = () => {
   return (
     <div>
       <div className="max-w-screen-lg lg:mx-auto mx-8">
+        <NavBar onClick={onNavBarClick}></NavBar>
         <Home ref={homeRef} />
         <AboutMe ref={aboutMeRef} />
-        <NavBar onClick={onNavBarClick}></NavBar>
+
         {/* <AboutMe ref={aboutMeRef} />
         <Projects ref={projectsRef}></Projects>
         <NavBar onClick={onNavBarClick}></NavBar> */}

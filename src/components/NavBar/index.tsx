@@ -10,10 +10,10 @@ const animation = "transition-[box-shadow]";
 const MobileNavBar: React.FC<{ showShadow: boolean }> = ({ showShadow }) => {
   const shawdow = showShadow
     ? "shadow-md mb-4"
-    : "shadow-none bg-transparent";
+    : "shadow-none";
   return (
     <div
-      className={`${animation} flex justify-between w-screen py-2 px-3 fixed items-center dark:bg-slate-900 top-0 left-0 ${shawdow}`}
+      className={`${animation} flex justify-between w-screen py-2 px-3 fixed items-center bg-white dark:bg-slate-900 top-0 left-0 z-50 ${shawdow}`}
     >
       <div className="text-2xl font-semibold text-gray-700 dark:text-slate-300 text-center">
       </div>
@@ -30,7 +30,7 @@ const DesktopNavBar: React.FC<{
 
   return (
     <nav
-      className={`${animation} fixed top-0 left-0 w-screen py-2 pl-4 pr-4  dark:bg-slate-900  ${shadow}`}
+      className={`${animation} fixed top-0 left-0 w-screen py-2 pl-4 pr-4 z-50 bg-white dark:bg-slate-900  ${shadow}`}
     >
       <div className="mx-auto max-w-screen-lg flex flex-row md:justify-end items-center">
         <div className="flex flex-row">
