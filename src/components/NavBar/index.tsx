@@ -8,7 +8,6 @@ import { selectScrolled } from "../../store/selectors";
 type ItemSelectCallback = (name: SectionName) => void;
 const animation = "transition-[box-shadow]";
 const MobileNavBar: React.FC<{ showShadow: boolean }> = ({ showShadow }) => {
-  const { t } = useTranslation();
   const shawdow = showShadow
     ? "shadow-md mb-4"
     : "shadow-none bg-transparent";
@@ -17,7 +16,6 @@ const MobileNavBar: React.FC<{ showShadow: boolean }> = ({ showShadow }) => {
       className={`${animation} flex justify-between w-screen py-2 px-3 fixed items-center dark:bg-slate-900 top-0 left-0 ${shawdow}`}
     >
       <div className="text-2xl font-semibold text-gray-700 dark:text-slate-300 text-center">
-        {t("navbar.name")}
       </div>
       <Settings />
     </div>

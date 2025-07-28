@@ -1,11 +1,13 @@
 import React, { Suspense } from "react";
 import Work from "./sections/Work";
+import { useAppDispatch } from "@/hooks";
 import Education from "./sections/Education";
 
 import { useTranslation } from "react-i18next";
 import Skill from "./sections/Skill";
 
 const AboutMe = React.forwardRef<HTMLDivElement>((_, ref) => {
+  const dispatch = useAppDispatch();
   const { t } = useTranslation();
   return (
     <div ref={ref}>

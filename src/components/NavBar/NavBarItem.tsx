@@ -23,7 +23,7 @@ const NavBarItem: React.FC<NavBarItemProps> = ({
     "font-bold text-sky-900 dark:text-sky-600 after:animate-bounce-emphasis " +
     underlineCss;
   const activeSection = useAppSelector(selectActiveSectionName);
-  const styleByActiveSection = (targetSection: string) =>
+  const styleByActiveSection = (targetSection: SectionName) =>
     activeSection === targetSection ? activeStyle : inactiveStyle;
   return (
     <p

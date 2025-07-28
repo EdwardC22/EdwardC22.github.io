@@ -2,15 +2,11 @@ import React, { Suspense, useEffect } from "react";
 // const ProfilePhoto = React.lazy(
 //   () => import(/* webpackChunkName: "profile-photo" */ "./ProfilePhoto")
 // );
-const IntroText = React.lazy(
-  () => import(/* webpackChunkName: "intro-text" */ "./IntroText")
-);
-const SocialIconsBar = React.lazy(
-  () => import(/* webpackChunkName: "social-icons" */ "./IconsBar")
-);
+const IntroText = React.lazy(() => import("./IntroText"));
+const SocialIconsBar = React.lazy(() => import("./IconsBar"));
 
-// import { useAppDispatch } from "@/hooks";
-// import { setScrolled } from "@/store/actions";
+import { useAppDispatch } from "@/hooks";
+import { setScrolled } from "@/store/actions";
 import Loading from "../Loading";
 
 const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
@@ -28,23 +24,22 @@ const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
         </div>
       </div>
       <div>
-        <Suspense fallback={<Loading />}>
-        </Suspense>
+        <Suspense fallback={<Loading />}></Suspense>
       </div>
     </div>
   );
 });
 
 const Home = React.forwardRef<HTMLDivElement>((_, ref) => {
-//   const dispatch = useAppDispatch();
-//   useEffect(() => {
-//     const callback = () => {
-//       const scrolled = window.scrollY > 0;
-//       dispatch(setScrolled(scrolled));
-//     };
-//     window.addEventListener("scroll", callback);
-//     return () => window.removeEventListener("scroll", callback);
-//   }, []);
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    const callback = () => {
+      const scrolled = window.scrollY > 0; 
+      dispatch(setScrolled(scrolled));
+    };
+    window.addEventListener("scroll", callback);
+    return () => window.removeEventListener("scroll", callback);
+  }, []);
   return (
     <div ref={ref}>
       <HomeContent />
