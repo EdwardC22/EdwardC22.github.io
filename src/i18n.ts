@@ -8,7 +8,8 @@ i18next
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: process.env.NODE_ENV === "development",
+    // debug: process.env.NODE_ENV === "development",
+    debug: false,
     fallbackLng: "en",
     defaultNS: "translations",
     compatibilityJSON: "v4",

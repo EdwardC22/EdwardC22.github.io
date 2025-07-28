@@ -1,0 +1,11 @@
+import { RootState } from "."
+
+export const selectActiveSectionName = (state: RootState) =>
+  state.root.activeSection;
+
+export const selectActiveSection = (state: RootState) =>
+  state.root.activeSection;
+
+export const selectScrolled = (state: RootState) => state.root.scrolled;
+
+export const selectAppearance = (state: RootState) => state.root.appearance;
