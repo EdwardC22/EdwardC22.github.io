@@ -1,6 +1,7 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { AppDispatch, RootState } from "./store";
+import { selectAppearance } from "./store/selectors";
 
 export const useExtendStyle =
   (classNames: string) =>
@@ -22,6 +23,15 @@ export const useMediaQuery = (query: string) => {
     return () => matchMedia.current.removeEventListener("change", handleChange);
   }, []);
   return match;
+};
+
+export const useDarkMode = () => {
+  const systemDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const selectedAppearance = useAppSelector(selectAppearance);
+  if (selectedAppearance === "system") {
+    return systemDarkMode;
+  }
+  return selectedAppearance === "dark";
 };
   
 export const useAppDispatch: () => AppDispatch = useDispatch;

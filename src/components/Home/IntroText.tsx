@@ -27,7 +27,7 @@ const IntroText: React.FC = () => {
   return (
     <div className="">
       <div className=" flex flex-col justify-center h-full text-gray-500">
-        <h1 className="text-8xl font-bold mb-2 text-gray-800 animate-breathe">
+        <h1 className="text-8xl font-bold mb-2 text-gray-800 animate-breathe dark:text-slate-200">
           {t("home.heading")}
         </h1>
         <p className="text-lg">{t("home.subheading1")}</p>

@@ -4,7 +4,7 @@ import AboutMe from "@/components/AboutMe";
 import { useTranslation } from "react-i18next";
 import NavBar from "./components/NavBar";
 import { SectionName, setActiveSectionName } from "@/store/slices/root";
-import { useAppDispatch } from "@/hooks";
+import { useAppDispatch, useDarkMode } from "@/hooks";
 
 const useI18nTitle = () => {
   const { t, i18n } = useTranslation();
@@ -18,6 +18,14 @@ const App: React.FC = () => {
   const aboutMeRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const dispatch = useAppDispatch();
+  const darkModeEnabled = useDarkMode();
+
+    useLayoutEffect(() => {
+    const root = document.getElementsByTagName("html")[0];
+    const style = `${darkModeEnabled ? "dark" : "light"}`;
+    root.setAttribute("class", style);
+  }, [darkModeEnabled]);
+
   useI18nTitle();
   const onNavBarClick = (name: SectionName) => {
     dispatch(setActiveSectionName(name));
