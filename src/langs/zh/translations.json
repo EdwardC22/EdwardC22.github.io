@@ -48,7 +48,6 @@
       "items": [
         {
           "heading": "前端",
-          "subheading": "熟悉 HTML、CSS、JS；使用 React、Tailwind",
           "skillset": {
             "HTML": 90,
             "CSS": 80,
@@ -60,7 +59,6 @@
         },
         {
           "heading": "后端",
-          "subheading": "熟悉 C#、Python、Node.js、.NET Core",
           "skillset": {
             "C#": 70,
             "Python": 75,
