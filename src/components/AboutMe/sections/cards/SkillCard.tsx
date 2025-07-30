@@ -4,7 +4,6 @@ import { useParentCollapsedState } from "@/hooks";
 import { FieldType } from "@/utils";
 import resources from "@/@types/resources";
 
-
 type SkillCardProps = FieldType<
   typeof resources,
   "translations.aboutMe.skills.items"
@@ -23,14 +22,16 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, percentage, className }) => {
     <div className={className}>
       <div className="flex justify-between text-sm font-bold text-gray-700 dark:text-slate-300 tracking-wide mx-1 mb-2">
         <span>{name}</span>
-        <span className={"text-gray-600 dark:text-slate-400"}>{percentage}%</span>
+        <span className={"text-gray-600 dark:text-slate-400"}>
+          {percentage}%
+        </span>
       </div>
       <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 w-full h-3 relative overflow-hidden">
         <div
           className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 h-full rounded-full transition-all duration-1000 ease-out animate-skill-wiggle"
           style={{
             width: `${percentage}%`,
-            transformOrigin: 'right center'
+            transformOrigin: "right center",
           }}
         />
       </div>
@@ -40,14 +41,12 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, percentage, className }) => {
 
 const SkillCard: React.FC<SkillCardProps> = ({
   heading,
-  subheading,
   className,
-  skillset
+  skillset,
 }) => {
   return (
     <AboueMeCard
       title={heading}
-      subtitle={subheading}
       className={`mb-4 ${className ?? ""}`}
       initExpand={true}
     >
