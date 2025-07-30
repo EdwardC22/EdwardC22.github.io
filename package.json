@@ -2,11 +2,13 @@
   "name": "personal-webpage",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "serve": "vite preview"
   },
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
