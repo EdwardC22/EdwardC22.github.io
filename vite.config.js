@@ -13,6 +13,9 @@ export default defineConfig({
   server: {
     hmr: {
       overlay: true
+    },
+    fs: {
+      strict: false
     }
   },
   resolve: {
