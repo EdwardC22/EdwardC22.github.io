@@ -18,13 +18,6 @@ const SocialIconsBar: React.FC = () => {
         >
           <FaIcon icon={faLinkedin} />
         </a>
-        <a href="" className="mr-16">
-          <NotionIcon
-            className={
-              "h-[1.9rem] w-[1.9rem] fill-gray-500 dark:fill-slate-400 hover:fill-gray-600 dark:hover:fill-slate-300 hover:scale-125 transition ease-in-out duration-200"
-            }
-          />
-        </a>
         <a
           className="text-gray-500 dark:text-slate-400 hover:text-gray-600 dark:hover:text-slate-300 hover:scale-125 transition ease-in-out duration-200 hover:cursor-pointer"
           href=""
