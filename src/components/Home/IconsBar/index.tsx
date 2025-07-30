@@ -2,7 +2,6 @@ import React from "react";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import FaIcon from "./FaIcon";
-import NotionIcon from "../../icons/NotionIcon";
 import { DocumentTextIcon } from "@heroicons/react/24/solid";
 
 const SocialIconsBar: React.FC = () => {
