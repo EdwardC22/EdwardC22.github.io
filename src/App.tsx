@@ -61,9 +61,8 @@ const App: React.FC = () => {
         <Home ref={homeRef} />
         <AboutMe ref={aboutMeRef} />
 
-        {/* <AboutMe ref={aboutMeRef} />
-        <Projects ref={projectsRef}></Projects>
-        <NavBar onClick={onNavBarClick}></NavBar> */}
+        {/* 
+        <Projects ref={projectsRef}></Projects> */}
       </div>
     </div>
   );

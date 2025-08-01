@@ -1,9 +1,11 @@
+
 import React, { Suspense, useEffect } from "react";
 // const ProfilePhoto = React.lazy(
 //   () => import(/* webpackChunkName: "profile-photo" */ "./ProfilePhoto")
 // );
 const IntroText = React.lazy(() => import("./IntroText"));
 const SocialIconsBar = React.lazy(() => import("./IconsBar"));
+import BreathingBall from "./BreathingBall";
 
 import { useAppDispatch } from "@/hooks";
 import { setScrolled } from "@/store/actions";
@@ -23,8 +25,8 @@ const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
           <SocialIconsBar />
         </div>
       </div>
-      <div>
-        <Suspense fallback={<Loading />}></Suspense>
+      <div className="flex justify-end h-full w-full">
+        <BreathingBall />
       </div>
     </div>
   );
