@@ -37,7 +37,7 @@ const AboutMeCardHeader: React.FC<AboutMeHeaderProps> = ({
 
       <div className="flex flex-col">
         <h3 className="text-lg font-semibold ">{title}</h3>
-        {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
+        {subtitle && <p className="text-sm text-gray-500 dark:text-slate-400">{subtitle}</p>}
       </div>
     </div>
   );

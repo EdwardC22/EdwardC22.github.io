@@ -30,8 +30,8 @@ const IntroText: React.FC = () => {
         <h1 className="text-8xl font-bold mb-2 text-gray-800 animate-breathe dark:text-slate-200">
           {t("home.heading")}
         </h1>
-        <p className="text-lg">{t("home.subheading1")}</p>
-        <p className="text-lg">{t("home.subheading2")}</p>
+        <p className="text-lg dark:text-slate-300">{t("home.subheading1")}</p>
+        <p className="text-lg dark:text-slate-300">{t("home.subheading2")}</p>
         <div className="text-xs md:text-sm mt-2 flex flex-col md:flex-row items-center hover:cursor-pointer pt-2">
           <div onClick={copyEmail} className="">
             <span className="mr-1">

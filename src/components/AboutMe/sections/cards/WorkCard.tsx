@@ -26,7 +26,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({
             className="text-grey-500 text-sm mb-1 flex tracking-wide"
             key={`${title}-${company}-${item}`}
           >
-            <span className="mr-4">•</span>
+            <span className="mr-4 ">•</span>
             {item}
           </p>
         ))}
