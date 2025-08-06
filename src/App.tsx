@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import Home from "@/components/Home";
 import AboutMe from "@/components/AboutMe";
+import FloatingParticles from "@/components/FloatingParticles";
 import { useTranslation } from "react-i18next";
 import NavBar from "./components/NavBar";
 import { SectionName, setActiveSectionName } from "@/store/slices/root";
@@ -56,7 +57,8 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <div className="max-w-screen-lg lg:mx-auto mx-8">
+      <FloatingParticles />
+      <div className="max-w-screen-lg lg:mx-auto mx-8 relative z-10">
         <NavBar onClick={onNavBarClick}></NavBar>
         <Home ref={homeRef} />
         <AboutMe ref={aboutMeRef} />

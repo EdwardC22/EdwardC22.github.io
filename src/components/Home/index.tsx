@@ -26,7 +26,7 @@ const HomeContent = React.forwardRef<HTMLDivElement>((_, ref) => {
         </div>
       </div>
       <div className="flex justify-end h-full w-full">
-        <BreathingBall />
+
       </div>
     </div>
   );
