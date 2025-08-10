@@ -4,16 +4,16 @@
     "aboutMe": "关于我",
     "projects": "项目经历",
     "settings": {
-      "darkMode": "深色模式",
-      "lightMode": "浅色模式",
+      "darkMode": "深色",
+      "lightMode": "浅色",
       "followSystem": "跟随系统",
       "fancyMode": "背景动画"
     }
   },
   "home": {
     "heading": "你好! 我是 Edward",
-    "subheading1": "计算机视觉开发",
-    "subheading2": "前端开发者（React）",
+    "subheading1": "计算机视觉软件开发",
+    "subheading2": "网页开发（React）",
     "mail": {
       "dialog": {
         "title": "邮箱",
@@ -73,9 +73,12 @@
       "title": "工作经历",
       "items": [
         {
-          "title": "计算机视觉开发",
+          "title": "计算机视觉软件开发",
           "company": "星徽联",
-          "descriptions": []
+          "descriptions": [
+            "使用YOLOv8进行目标检测与人脸识别，结合MediaPipe进行实时姿态识别，提升智能监控与安全系统的准确性与实时性。",
+            "深入分析并解决公司项目中的C++代码的内存泄漏问题，使用gdb和Valgrind进行内存分析与调试，优化内存使用并成功解决内存问题。"
+          ]
         },
         {
           "title": "软件工程师实习生",

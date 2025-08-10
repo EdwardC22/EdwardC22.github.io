@@ -14,7 +14,7 @@
   },
   "home": {
     "heading": "G'Day! I'm Edward.",
-    "subheading1": "Computer Vision Engineer",
+    "subheading1": "Computer Vision Developer",
     "subheading2": "Web Developer (React)",
     "email": "edwardchan22@hotmail.com",
     "copied": "Copied!"
@@ -69,7 +69,7 @@
       "title": "Work Experience",
       "items": [
         {
-          "title": "Frontend Developer",
+          "title": "Computer Vision Developer",
           "company": "Star Union, Guangzhou",
           "descriptions": [
 
